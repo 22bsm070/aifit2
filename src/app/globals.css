@@ -48,13 +48,13 @@
   --radius: 0.625rem;
 
   /* Cyberpunk Theme Colors */
-  --cyber-black: #0a0a0a;        /* Deep black */
-  --cyber-dark: #121212;         /* Neutral dark gray */
-  --cyber-blue-bright: #2d1b64;  /* Rich neon purple-blue */
-  --cyber-blue: #3a7ca5;         /* Medium cyan-blue */
-  --cyber-blue-dark: #0b4a7d;    /* Dark cool blue */
-  --cyber-blue-glow: #01f9c6;    /* Neon cyan glow */
-  --cyber-accent: #ff007f;
+  --cyber-black: #000000;
+  --cyber-dark: #0a0c14;
+  --cyber-blue-bright: #18cef2;
+  --cyber-blue: #1089bd;
+  --cyber-blue-dark: #0b4a7d;
+  --cyber-blue-glow: #38bdf8;
+  --cyber-accent: #0ff4;
 
   /* Background */
   --background: var(--cyber-dark);
@@ -151,7 +151,7 @@
 
   /* Chart colors - cyberpunk theme */
   --chart-1: var(--cyber-blue-bright);
-  --chart-2: #030c1b;
+  --chart-2: #3b82f6;
   --chart-3: var(--cyber-blue);
   --chart-4: #06b6d4;
   --chart-5: #0284c7;
@@ -190,6 +190,7 @@
   }
 }
 
+/* TODO: EXPLAIN THIS BC U PROMISED JUST IN THE FIRST SECTION */
 @keyframes slow-spin {
   from {
     transform: rotate(0deg);
