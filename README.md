@@ -144,7 +144,7 @@ aifit2/
 
 ## 📈 Key Statistics
 
-- **500+ Active Users** - Growing community of fitness enthusiasts
+- **10+ Active Users** - Growing community of fitness enthusiasts
 - **3min Generation Time** - Fast AI-powered program creation
 - **100% Personalized** - Every program tailored to individual needs
 - **Multiple Fitness Levels** - Beginner to advanced support
