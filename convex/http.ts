@@ -158,7 +158,7 @@ http.route({
         
         Return a JSON object with this EXACT structure:
         {
-          "schedule": ["Monday", "Wednesday", "Friday"],
+          "schedule": ["Monday", "Tuesday","Wednesday","Thursday", "Friday"],
           "exercises": [
             {
               "day": "Monday",
@@ -181,7 +181,7 @@ http.route({
         let workoutPlan=JSON.parse(workoutPlanText);
         workoutPlan=validateWorkoutPlan(workoutPlan);
 
-        const dietPrompt = `You are an experienced nutrition coach creating a personalized diet plan based on:
+        const dietPrompt = `You are an experienced nutrition coach creating a personalized Indian diet plan based on:
         Age: ${age}
         Height: ${height}
         Weight: ${weight}
