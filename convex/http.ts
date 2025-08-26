@@ -104,12 +104,43 @@ function validateDietPlan(plan: any) {
   return validatedPlan;
 }
 
+// Function to sanitize input data and fix common misspellings
+function sanitizeInputData(data: any) {
+  // Fix common misspellings for injuries
+  if (data.pace_injuries && !data.past_injuries) {
+    data.past_injuries = data.pace_injuries;
+    delete data.pace_injuries;
+  }
+  
+  if (data.past_injury && !data.past_injuries) {
+    data.past_injuries = data.past_injury;
+    delete data.past_injury;
+  }
+  
+  // Fix text content misspellings in all string fields
+  Object.keys(data).forEach(key => {
+    if (typeof data[key] === 'string') {
+      // Fix "parasolized" to "personalized"
+      data[key] = data[key].replace(/parasolized/gi, 'personalized');
+      
+      // Add more text corrections as needed
+      data[key] = data[key].replace(/personalised/gi, 'personalized'); // British to American spelling
+    }
+  });
+  
+  return data;
+}
+
 http.route({
     path:"/vapi/generate-program",
     method:"POST",
     handler: httpAction(async(_ctx,request) => {
         try {
-            const payload=await request.json();
+            let payload=await request.json();
+            
+            // Sanitize input data to fix common misspellings
+            payload = sanitizeInputData(payload);
+            
         const{
             user_id,
             age,
