@@ -168,7 +168,7 @@ aifit2/
 **Developer**: Yash Raj
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/yash-raj-59918725b/)
-[![GitHub](https://img.shields.io/badge/GitHub-hifzaanDev-181717?style=for-the-badge&logo=github)](https://github.com/hifzaanDev)
+[![GitHub](https://img.shields.io/badge/GitHub-hifzaanDev-181717?style=for-the-badge&logo=github)](https://github.com/YashCooks)
 [![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail)](mailto:yraj0600@gmail.com)
 
 ---
